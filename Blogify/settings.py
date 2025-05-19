@@ -101,6 +101,7 @@ REST_FRAMEWORK ={
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 from dotenv import load_dotenv
+import dj_database_url
 
 load_dotenv()
 
