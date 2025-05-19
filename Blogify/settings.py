@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = 'django-insecure-uc_gp$zag5i!+z2t*9#tw@rjv0+jgk8x9z*dp$wgv-9g4otj%r'
 
 # SECURITY WARNING: Keep the secret key used in production secret in dotenv file!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-fallback-key')
 
 # SECURITY WARNING: Don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG') == 'True'
@@ -33,7 +33,7 @@ DEBUG = os.getenv('DEBUG') == 'True'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
