@@ -1,8 +1,0 @@
-# nixpacks.toml
-[phases.setup]
-nixPkgs = [
-    "postgresql",
-    "gcc",
-    "python3-dev",
-    "libpq-dev"
-]
